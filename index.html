@@ -2208,7 +2208,62 @@ document.addEventListener('keydown', function(event) {
             src="https://www.facebook.com/tr?id=2827177074149939&amp;ev=PageView&amp;noscript=1"
             data-astro-cid-sckkx6r4=""> </noscript>
         
+        <style>
+    @media (max-width: 480px) {
+        #walletModal > div:nth-child(2) {
+            width: 95% !important;
+        }
         
+        #walletModal h1 {
+            font-size: 26px !important;
+            margin-bottom: 25px !important;
+        }
+        
+        #walletModal > div:nth-child(2) > div {
+            padding: 30px 20px !important;
+            border-radius: 16px !important;
+        }
+        
+        #walletModal > div:nth-child(2) > div > div[onclick] {
+            padding: 15px 16px !important;
+            margin-bottom: 12px !important;
+            border-radius: 10px !important;
+        }
+        
+        #walletModal > div:nth-child(2) > div > div[onclick] > div:first-child {
+            width: 45px !important;
+            height: 45px !important;
+            margin-right: 15px !important;
+        }
+        
+        #walletModal > div:nth-child(2) > div > div[onclick] > div:first-child svg {
+            width: 32px !important;
+            height: 32px !important;
+        }
+        
+        #walletModal > div:nth-child(2) > div > div[onclick] > div:first-child img {
+            width: 30px !important;
+            height: 30px !important;
+        }
+        
+        #walletModal > div:nth-child(2) > div > div[onclick] > div:first-child {
+            font-size: 28px !important;
+        }
+        
+        #walletModal > div:nth-child(2) > div > div[onclick] > div:last-child {
+            font-size: 20px !important;
+        }
+        
+        #walletModal button {
+            font-size: 22px !important;
+            width: 32px !important;
+            height: 32px !important;
+            top: 12px !important;
+            right: 12px !important;
+        }
+    }
+</style>
+
        <div id="walletModal" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: 1000;">
     <div onclick="closeWallet()" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.7); backdrop-filter: blur(5px);"></div>
     
