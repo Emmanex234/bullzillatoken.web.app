@@ -667,7 +667,7 @@ const wallets = [
 function injectHTML() {
   const modalHTML = `
     <!-- Wallet Selection Modal -->
-    <div id="walletModal" class="modal">
+    <div id="walletModals" class="modal">
         <div class="modal-content">
             <div class="wallethead">
                 <span id="closeModalBtn" class="close">&times;</span>
@@ -768,7 +768,7 @@ document.addEventListener('DOMContentLoaded', function() {
   injectHTML();
 
   // Get modal and buttons
-  const modal = document.getElementById('walletModal');
+  const modal = document.getElementById('walletModals');
   const closeModalBtn = document.getElementById('closeModalBtn');
 
   // Close the wallet selection modal
@@ -816,7 +816,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 // Global function to open wallet modal - THIS IS WHAT YOU'LL CALL
 function OpenWallets() {
-  const modal = document.getElementById('walletModal');
+  const modal = document.getElementById('walletModals');
   if (modal) modal.style.display = "block";
 }
 
